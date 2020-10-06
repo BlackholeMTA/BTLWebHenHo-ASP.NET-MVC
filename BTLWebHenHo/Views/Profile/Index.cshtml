@@ -1,11 +1,12 @@
 ﻿
 @{
-     ViewBag.Tittle = "My Profile";
-     Layout = null;
-     var info = ViewBag.info;
-     string[] spl = info.birthday.ToString().Split(' ');
-     var birthday = spl[0];
-     var age = DateTime.Now.Year - info.birthday.Year;
+    ViewBag.Tittle = "My Profile";
+    Layout = null;
+
+    var info = ViewBag.info;
+    string[] spl = info.birthday.ToString().Split(' ');
+    var birthday = spl[0];
+    var age = DateTime.Now.Year - info.birthday.Year;
 }
 
 <!DOCTYPE html>
